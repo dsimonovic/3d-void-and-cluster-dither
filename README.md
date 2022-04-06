@@ -12,4 +12,6 @@ INPUT:  Modifiable parameters are at the top of the cpp file.
 
 OUTPUT: 3D pixel matrix is saved as a number of images (layers).
 
+Kernel is Gaussian. Results tend to look more pleasing at lower end (1.3 - 1.4) which is in contrast to findings of https://blog.demofox.org/2019/06/25/generating-blue-noise-textures-with-void-and-cluster/ and http://momentsingraphics.de/BlueNoise.html, where sigma=1.9 is optimal for 2D.
+
 Friendly note: Using a single layer of a 3D dither pattern is inferior to 2D dither pattern (where inferior means low frequency noise).

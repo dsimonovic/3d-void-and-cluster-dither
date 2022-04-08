@@ -2,7 +2,7 @@
 //
 // The 2D algorithm presented in the paper is verbatim generalized to 3D.
 // 
-// R. Ulichney, ìThe Void-and-Cluster Method for Generating Dither Arraysî,
+// R. Ulichney, ‚ÄúThe Void-and-Cluster Method for Generating Dither Arrays‚Äù,
 // Human Vision, Visual Processing, and Digital Display IV, J. Allebach and B. Rogowitz, eds., Proc. SPIE 1913, pp. 332-343, 1993.
 // Author's version of the paper can be found at: http://cv.ulichney.com/papers/1993-void-cluster.pdf
 // 
@@ -474,10 +474,8 @@ int main()
     intro();
 
     Matrix3D_w_void_and_cluster_tracking mat3d(N, N, N);
-    int initial_count = INITIAL_COUNT;
-    phase_1(mat3d, initial_count);
-    phase_2_and_3(mat3d, initial_count);
-
+    phase_1(mat3d, INITIAL_COUNT);
+    phase_2_and_3(mat3d, INITIAL_COUNT);
 
     try 
     { save(mat3d, path); }
